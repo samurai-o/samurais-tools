@@ -1,0 +1,8 @@
+47 error Error: Command failed with exit code 128: git push --follow-tags --no-verify --atomic origin master
+47 error kex_exchange_identification: read: Connection reset by peer
+47 error fatal: Could not read from remote repository.
+47 error
+47 error Please make sure you have the correct access rights
+47 error and the repository exists.
+47 error     at makeError (/usr/local/Cellar/nvm/0.38.0/versions/node/v12.8.0/lib/node_modules/lerna/node_modules/execa/lib/error.js:60:11)
+47 error     at handlePromise (/usr/local/Cellar/nvm/0.38.0/versions/node/v12.8.0/lib/node_modules/lerna/node_modules/execa/index.js:118:26)
