@@ -1,9 +1,9 @@
 {
-  "name": "samurais-log",
+  "name": "samurais-utils",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "刘伟 <lemonpaimc@126.com>",
-  "homepage": "",
+  "homepage": "https://github.com/samurai-o/samurais-tools#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -14,16 +14,16 @@
     "lib"
   ],
   "publishConfig": {
-    "access": "public",
     "registry": "https://registry.npm.taobao.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samurai-o/samurais-tools.git"
   },
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
-    "samurais-utils": "0.0.0"
-  },
-  "devDependencies": {
-    "del-cli": "^4.0.1"
+  "bugs": {
+    "url": "https://github.com/samurai-o/samurais-tools/issues"
   }
 }
