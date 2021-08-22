@@ -14,8 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npm.taobao.org/"
+    "access": "public"
   },
   "scripts": {
     "build": "tsc"
@@ -25,5 +24,6 @@
   },
   "devDependencies": {
     "del-cli": "^4.0.1"
-  }
+  },
+  "gitHead": "045e5086ffbd953089327dd94b034f0e298ef290"
 }
