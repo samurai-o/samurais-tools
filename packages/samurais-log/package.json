@@ -1,6 +1,6 @@
 {
   "name": "samurais-log",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "> TODO: description",
   "author": "刘伟 <lemonpaimc@126.com>",
   "homepage": "",
@@ -20,7 +20,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "samurais-utils": "^0.0.4"
+    "samurais-utils": "^0.0.5"
   },
   "devDependencies": {
     "del-cli": "^4.0.1"
