@@ -1,6 +1,16 @@
 import { isEmpty, isObject, isString } from 'samurais-utils';
 import { ICatch, IMessage } from "./interface";
 
+/** 普通异常信息 */
+window.addEventListener("error", (e) => {
+    Logger.error({ type: "error", message: e.message })
+})
+
+/** promise异常信息 */
+window.addEventListener("unhandledrejection", (e) => {
+    Logger.error({ type: "promise", message: e.reason });
+})
+
 
 const tagLevelColor = new Map([
     ['success', '#03913C'],
@@ -8,6 +18,7 @@ const tagLevelColor = new Map([
     ['info', '#06A598'],
     ['error', '#E40662']
 ]);
+
 export type LOGTYPE = "success" | "info" | "error" | 'env';
 
 export class Logger {
@@ -16,7 +27,7 @@ export class Logger {
         if (!window || !window.console) return;
         console.log(
             `%c${label}%c${value}`,
-            "background: #6f5a5a; color: #fff;border-top-left-radius: 2px; border-bottom-left-radius: 2px; padding: 2px 10px;",
+            "background: #000000; color: #fff;border-top-left-radius: 2px; border-bottom-left-radius: 2px; padding: 2px 10px;",
             `background: ${tagLevelColor.get(
                 level,
             )};color: #fff;border-top-right-radius: 2px; border-bottom-right-radius: 2px;padding: 2px 10px;`,
