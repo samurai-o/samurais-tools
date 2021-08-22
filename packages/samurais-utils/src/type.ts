@@ -7,7 +7,7 @@ export function isUndefined(params: any): params is undefined {
     return typeof params === 'undefined';
 }
 
-export function isNull(params: any) {
+export function isNull(params: any): params is null {
     return !params && !isUndefined(params) && params === null
 }
 
@@ -30,4 +30,16 @@ export function isString(params: any): params is string {
 
 export function isObject<K = any>(params: any): params is Record<string, K> {
     return (typeof params === 'object') && !isArray(params);
+}
+
+export function isSymbol(params: any): params is symbol {
+    return typeof params === 'symbol';
+}
+
+export function isBoolean(params: any): params is boolean {
+    return typeof params === 'boolean';
+}
+
+export function isBigint(params: any): params is bigint {
+    return typeof params === 'bigint';
 }

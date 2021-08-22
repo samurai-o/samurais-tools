@@ -1,17 +1,6 @@
 import { isEmpty, isObject, isString } from 'samurais-utils';
 import { ICatch, IMessage } from "./interface";
 
-/** 普通异常信息 */
-window.addEventListener("error", (e) => {
-    Logger.error({ type: "error", message: e.message })
-})
-
-/** promise异常信息 */
-window.addEventListener("unhandledrejection", (e) => {
-    Logger.error({ type: "promise", message: e.reason });
-})
-
-
 const tagLevelColor = new Map([
     ['success', '#03913C'],
     ['env', '#1A83EC'],
